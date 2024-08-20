@@ -12,7 +12,7 @@ session_start();
     <?php
     if (!empty($_SESSION['username'])) {
         // Если в сессии есть имя пользователя, поприветствовать его
-        echo "<h1>Привет, " . htmlspecialchars($_SESSION['username']) . "!</h1>";
+        echo "<h1>Привет!, " . htmlspecialchars($_SESSION['username']) . "!</h1>";
         echo '<a href="exit.php">Выйти</a>';
     } else {
         // Если имени нет, отобразить форму
